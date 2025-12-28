@@ -72,7 +72,7 @@ section {
 .burger .line {
   display: block;
   width: 100%;
-  height: 3px;
+  height: 2.5px;
   background-color: #74450d;
   margin-bottom: 5px;
   transition: 0.2s linear;
@@ -88,10 +88,6 @@ section {
     display: block;
     background-color: transparent;
     border: 0;
-  }
-
-  .menu a:hover {
-    background-color: #ffc760;
   }
 
   .burger.active .line:nth-child(1) {
@@ -110,26 +106,36 @@ section {
   }
 
   nav.active .menu {
+    font-family: "Anton SC", sans-serif;
     display: block;
-    background-color: #610f13;
+    text-align: center;
+    background-color: #fdb414;
     position: absolute;
     top: 94px;
     left: 0;
     width: 100%;
+    padding: 20px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
 
-  nav.active .menu li {
-    margin: 10px 20px;
-  }
-
   nav.active .menu a {
     font-size: 24px;
-    color: white;
-    -webkit-text-stroke: 0.5px black;
+    color: #74450d;
     text-align: center;
+    margin-left: 25px;
   }
+}
+
+nav.active .menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li:hover {
+  transform: scale(1.05); /* Gør billedet lidt større */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Skyggeeffekt */
 }
 
 @media (max-width: 800px) {
@@ -148,63 +154,6 @@ section {
     right: 20px; /* 👈 distance from right side */
     top: 20px; /* 👈 adjust as needed */
   }
-}
-
-/*********** footer ***********/
-
-.footer {
-  background-color: #610f13;
-  border-top: #fcbc32 solid 2px;
-  color: white;
-  padding: 2rem 1rem;
-  margin-top: 3rem;
-}
-
-.footer-content {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer-info {
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-}
-
-.footer-contact {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: white;
-}
-
-.contact-item svg {
-  fill: #fcbc32;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.social-links img {
-  width: 24px;
-  filter: invert(82%) sepia(70%) saturate(2000%) hue-rotate(350deg) brightness(100%) contrast(95%);
-  /* Dette gør ikonerne gule */
-  transition: transform 0.2s ease;
-}
-
-.social-links img:hover {
-  transform: scale(1.2);
 }
 
 /********menu***********/
@@ -260,8 +209,35 @@ section {
     font-size: 1.5rem;
     -webkit-text-stroke: 0.5px black;
   }
+}
 
-  .menu a:hover {
-    color: #fcbc32;
-  }
+/*********** footer ***********/
+
+#footer {
+  background-color: #f8efe4;
+  border-top: #74450d 2px solid;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #74450d;
+  text-align: center;
+  padding: 40px;
+  display: grid;
+}
+
+.kontakt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+}
+
+.kontakt2 {
+  background-color: #fdb414; /* light background */
+  border: 2px solid #74450d;
+  padding: 20px; /* space inside the box */
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
