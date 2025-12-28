@@ -129,3 +129,47 @@ h2 {
   text-align: center;
   margin-top: 40px;
 }
+
+/*******erfaring******/
+
+#erfaring {
+  background-color: #f8efe4;
+  border-top: #74450d 2px solid;
+  display: grid;
+}
+
+.rating {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+  margin-top: 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.adobe {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.d1 {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+  margin-top: 5px;
+  background-color: #fdb414;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+h3 {
+  margin-left: 5px;
+  font-family: "Anton SC", sans-serif;
+  color: #74450d;
+}
