@@ -23,7 +23,7 @@ h2 {
   font-family: "Chicle", serif;
   font-size: 35px;
   color: #74450d;
-  margin-left: 65px;
+  text-align: center;
 }
 
 .dot1 {
@@ -172,4 +172,34 @@ h3 {
   margin-left: 5px;
   font-family: "Anton SC", sans-serif;
   color: #74450d;
+}
+
+/*******om-mig*********/
+
+#om-mig {
+  background-color: #ffc760;
+  border-top: #74450d 2px solid;
+  display: grid;
+}
+
+.om-mig1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 5px;
+}
+
+.om-mig1 img {
+  margin-top: 10px;
+  border: 2px solid #74450d;
+}
+
+.om-mig2 {
+  background-color: #fdb414; /* light background */
+  border: 2px solid #74450d;
+  padding: 20px; /* space inside the box */
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
