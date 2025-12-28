@@ -1,0 +1,131 @@
+/************Reset**************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-family: "Rampart One", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #74450d;
+}
+
+h2 {
+  font-family: "Chicle", serif;
+  font-size: 35px;
+  color: #74450d;
+  margin-left: 65px;
+}
+
+.dot1 {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: #fdb414;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot2 {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: #ffc760;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot3 {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: #ff9737;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot6 {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  background-color: #fdb414;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot5 {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background-color: #ffc760;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot4 {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  background-color: #ff9737;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.leftdot {
+  margin-left: 300px;
+}
+.rightdot {
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-top: 1px;
+}
+
+#home {
+  scroll-margin-top: 120px;
+}
+
+/********Knapper********/
+
+#projekter {
+  background-color: #ffc760;
+  border-top: #74450d 2px solid;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Anton SC", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #74450d;
+  background-color: #fdb414;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 9px #999;
+}
+
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
