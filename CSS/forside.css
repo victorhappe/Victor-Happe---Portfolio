@@ -248,7 +248,7 @@ h3 {
 
   .om-mig1 img {
     width: 60%;
-    margin-left: 275px;
+    margin-left: 260px;
     margin-top: 20px;
   }
 
@@ -264,6 +264,7 @@ h3 {
     width: 400px;
     height: 570px;
     margin-top: 20px;
+    margin-left: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
     align-items: center;
     justify-content: center;
