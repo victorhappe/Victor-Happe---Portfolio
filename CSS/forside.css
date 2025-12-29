@@ -204,4 +204,69 @@ h3 {
   align-self: center;
 }
 
-/*******Kontakt mig*********/
+/********desktop********/
+
+@media (min-width: 840px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .leftdot {
+    margin-left: 800px;
+  }
+  .rightdot {
+    margin-left: 370px;
+    margin-top: 10px;
+  }
+
+  /******projekter*******/
+
+  /*******erfaring*******/
+
+  .adobe {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  #erfaring {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rating {
+    margin-right: 35px;
+    font-size: 20px;
+  }
+
+  .adobe {
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 15px;
+  }
+
+  /*********Om-mig*********/
+
+  .om-mig1 img {
+    width: 60%;
+    margin-left: 275px;
+    margin-top: 20px;
+  }
+
+  .om-mig1 {
+    margin-top: 2px;
+    justify-content: center;
+  }
+
+  .om-mig2 {
+    background-color: #fdb414; /* light background */
+    border: 2px solid #74450d;
+    padding: 10px; /* space inside the box */
+    width: 400px;
+    height: 570px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+}

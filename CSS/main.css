@@ -162,52 +162,88 @@ nav.active .menu li {
   header {
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffc760;
-    border-bottom: #fcbc32 solid 2px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+
+    background-color: #f8efe4;
+    border-bottom: #74450d 2px solid;
+    box-shadow: none;
+
+    /* key part */
+    position: sticky;
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+  }
+
+  /* Make nav take full width so it can push left/right */
+  nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Menu is a flex row and stretches full width */
+  .menu {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+    gap: 18px;
+  }
+
+  /* Push the LAST menu item (Kontakt mig) to the far right */
+  .menu li:last-child {
+    margin-left: auto;
+  }
+
+  /* Center the logo in the header (true center) */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .logo img {
-    width: 70px;
-    height: 70px;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-  }
-
-  .menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu li {
-    margin-right: 20px;
-  }
-
-  .menu li:last-child {
-    margin-right: 0;
+    width: auto;
+    height: 100px;
+    display: block;
   }
 
   .menu a {
     display: block;
-    padding: 20px;
-    color: white;
+    padding: 12px 10px;
+    color: #74450d;
     text-decoration: none;
     transition: color 0.3s;
-    text-align: end;
-    font-family: "Bangers", system-ui;
+    font-family: "Chicle", serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     -webkit-text-stroke: 0.5px black;
+  }
+
+  .menu a:hover {
+    color: #fdb414;
+  }
+
+  /* Style the last link like a button (Kontakt mig) */
+  .menu li:last-child a {
+    background: #ffc760;
+    color: #74450d;
+    border-radius: 999px;
+    padding: 12px 18px;
+    -webkit-text-stroke: 0;
+  }
+
+  .menu li:last-child a:hover {
+    color: #000;
+    filter: brightness(0.95);
+  }
+
+  /* Optional: hide burger on desktop */
+  .burger {
+    display: none;
   }
 }
 
