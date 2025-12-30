@@ -191,6 +191,7 @@ h3 {
 .om-mig1 img {
   margin-top: 10px;
   border: 2px solid #74450d;
+  border-radius: 15px;
 }
 
 .om-mig2 {
@@ -202,6 +203,7 @@ h3 {
   align-items: center;
   justify-content: center;
   align-self: center;
+  border-radius: 15px;
 }
 
 /********desktop********/
