@@ -291,6 +291,7 @@ nav.active .menu li {
 }
 
 .kontakt2 {
+  border-radius: 15px;
   background-color: #fdb414; /* light background */
   border: 2px solid #74450d;
   padding: 20px; /* space inside the box */

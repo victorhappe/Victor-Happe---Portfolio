@@ -1,0 +1,130 @@
+/************Reset**************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+Img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tema2 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  margin-bottom: 65px;
+}
+
+.th2 {
+  margin-top: 20px;
+}
+
+.tema2 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.tema-2 {
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  color: #74450d;
+  background-color: #fdb414;
+  border: 2px solid #74450d;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.boks2 {
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+  color: #74450d;
+  background-color: #fdb414;
+  border: 2px solid #74450d;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.tema2img {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: 35px;
+}
+.btt2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Anton SC", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #74450d;
+  background-color: #ffc760;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 9px #999;
+}
+
+.btt2:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (min-width: 840px) {
+  .tema-2 {
+    width: 450px;
+    font-size: 17px;
+    color: #74450d;
+    background-color: #fdb414;
+    border-radius: 15px;
+    margin: 20px auto; /* centers the box horizontally */
+    text-align: left; /* text stays at top/left */
+  }
+
+  .dot4 {
+    margin-left: 170px;
+  }
+
+  .dot3 {
+    margin-right: 200px;
+  }
+
+  .boks2 {
+    width: 450px;
+    font-size: 17px;
+    color: #74450d;
+    background-color: #fdb414;
+    border-radius: 15px;
+
+    margin: 20px auto; /* centers the box horizontally */
+    text-align: left; /* text stays at top/left */
+  }
+
+  .tema2 {
+    max-width: 900px; /* try 800–1000px */
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
