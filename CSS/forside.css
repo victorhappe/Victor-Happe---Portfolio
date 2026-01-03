@@ -172,6 +172,7 @@ h3 {
   margin-left: 5px;
   font-family: "Anton SC", sans-serif;
   color: #74450d;
+  text-align: center;
 }
 
 /*******om-mig*********/
@@ -199,10 +200,10 @@ h3 {
   border: 2px solid #74450d;
   padding: 20px; /* space inside the box */
   margin: 10px;
+  height: 375px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
   align-items: center;
   justify-content: center;
-  align-self: center;
   border-radius: 15px;
 }
 
@@ -270,6 +271,5 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
     align-items: center;
     justify-content: center;
-    align-self: center;
   }
 }
