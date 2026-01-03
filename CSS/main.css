@@ -57,7 +57,7 @@ header {
 }
 
 section {
-  min-height: 50vh;
+  min-height: 40vh;
   padding: 60px 20px;
 }
 
@@ -298,4 +298,86 @@ nav.active .menu li {
   margin: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
   align-items: center;
+}
+
+/******popover******/
+[popover] {
+  padding: 1rem;
+
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  align-items: center;
+}
+
+[popover] {
+  opacity: 0;
+  rotate: -360deg;
+  transition: 0.5s allow-discrete;
+}
+
+:popover-open {
+  opacity: 3;
+  rotate: none;
+
+  @starting-style {
+    opacity: 0;
+    rotate: -360deg;
+  }
+}
+
+/* Gør popovers pæne og scrollbare */
+[popover] {
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+  width: min(90vw, 720px);
+  max-height: 80vh; /* << vigtig */
+  overflow: auto; /* << vigtig */
+  padding: 1rem;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background: #fdb414;
+  color: #74450d;
+}
+
+/* Billeder skal ikke sprænge layoutet */
+[popover] img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Valgfrit: lås sidescroll når popover er åben (som dialog) */
+:root:has([popover]:popover-open) {
+  overflow: hidden;
+}
+
+.cta_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: "Anton SC", sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #74450d;
+  background-color: #fdb414;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 9px #999;
+}
+
+.cta_btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.cta_btn {
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  align-content: center;
 }
