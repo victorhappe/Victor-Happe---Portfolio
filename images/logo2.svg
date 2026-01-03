@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.1 139.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #57301e;
+      }
+
+      .cls-3 {
+        fill: #f6f0e6;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #f1b74e;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #dd744a;
+      }
+
+      .cls-6 {
+        fill: #f1b74e;
+      }
+
+      .cls-4 {
+        fill: #221f20;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-6" cx="112.05" cy="54.22" rx="112.05" ry="54.22"/>
+  <ellipse class="cls-5" cx="112.05" cy="54.22" rx="93.51" ry="38.44"/>
+  <ellipse class="cls-2" cx="112.05" cy="54.22" rx="71.91" ry="23.43"/>
+  <rect class="cls-1" x="91.08" y="42.71" width="41.93" height="23"/>
+  <polygon class="cls-3" points="86.83 41.26 95.01 66.98 103.06 66.41 112.05 41.26 103.06 41.26 99.97 53.19 96.43 41.26 86.83 41.26"/>
+  <polygon class="cls-3" points="115.36 41.16 114.55 66.57 124.07 66.57 124.47 58.64 131.91 58.64 131.64 67.08 141.77 67.08 142.5 41.16 132.45 41.16 132.18 49.86 124.47 49.86 124.94 41.16 115.36 41.16"/>
+  <line class="cls-4" x1="92.8" y1="44.82" x2="99.16" y2="64.2"/>
+  <line class="cls-4" x1="99.46" y1="64.1" x2="107.19" y2="44.14"/>
+  <line class="cls-4" x1="137.03" y1="44.42" x2="136.56" y2="64.2"/>
+  <line class="cls-4" x1="119.88" y1="44.53" x2="119.42" y2="63.9"/>
+  <line class="cls-4" x1="136.56" y1="54.47" x2="119.88" y2="54.31"/>
+</svg>
