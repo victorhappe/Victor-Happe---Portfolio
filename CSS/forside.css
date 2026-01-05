@@ -185,14 +185,21 @@ h3 {
 
 .om-mig1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 5px;
 }
 
 .om-mig1 img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   margin-top: 10px;
   border: 2px solid #74450d;
   border-radius: 15px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
 }
 
 .om-mig2 {
@@ -200,11 +207,15 @@ h3 {
   border: 2px solid #74450d;
   padding: 20px; /* space inside the box */
   margin: 10px;
-  height: 375px;
+  height: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
   align-items: center;
   justify-content: center;
   border-radius: 15px;
+}
+
+.om-mig2 p {
+  margin-top: 5px;
 }
 
 /********desktop********/
@@ -256,6 +267,9 @@ h3 {
   }
 
   .om-mig1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
     margin-top: 2px;
     justify-content: center;
   }
@@ -271,5 +285,9 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
     align-items: center;
     justify-content: center;
+  }
+
+  .om-mig2 p {
+    margin-top: 5px;
   }
 }
