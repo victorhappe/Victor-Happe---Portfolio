@@ -236,7 +236,8 @@ nav.active .menu li {
   }
 
   .menu li:last-child a:hover {
-    color: #000;
+    color: #fdb414;
+    -webkit-text-stroke: 0.5px black;
     filter: brightness(0.95);
   }
 
@@ -298,6 +299,28 @@ nav.active .menu li {
   margin: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
   align-items: center;
+}
+
+.contact-item svg {
+  fill: #74450d;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links img {
+  width: 24px;
+  color: #74450d;
+  /* Dette gør ikonerne gule */
+  transition: transform 0.2s ease;
+  fill: #74450d;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
 }
 
 /******popover******/
