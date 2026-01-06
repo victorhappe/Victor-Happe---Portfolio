@@ -147,6 +147,11 @@ nav.active .menu li {
   font-size: 0.6rem;
 }
 
+.kontakt2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 @media screen and (max-width: 800px) {
   .burger {
     position: absolute;
