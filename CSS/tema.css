@@ -15,9 +15,18 @@ Img {
 .tema2 {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 20px;
   margin-bottom: 65px;
+}
+
+.video {
+  width: 560px;
+  height: 315px;
+}
+
+.dot4 {
+  margin-left: 300px;
 }
 
 .tema2 h3 {
@@ -38,11 +47,11 @@ Img {
   align-items: center;
   width: 80%;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .tema-2 {
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 17px;
   cursor: pointer;
   text-align: left;
@@ -51,7 +60,7 @@ Img {
   background-color: #fdb414;
   border: 2px solid #74450d;
   border-radius: 15px;
-  margin: 10px;
+  margin: 30px;
 }
 
 .boks2 {
@@ -64,7 +73,7 @@ Img {
   background-color: #fdb414;
   border: 2px solid #74450d;
   border-radius: 15px;
-  margin: 10px;
+  margin: 30px;
 }
 
 .tema2img {
@@ -73,6 +82,13 @@ Img {
   margin: auto;
   margin-left: 35px;
 }
+
+.video {
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
 .btt2 {
   display: inline-block;
   padding: 10px 20px;
@@ -131,8 +147,30 @@ Img {
   }
 
   .tema2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
     max-width: 900px;
     margin: 0 auto;
     margin-bottom: 50px;
+  }
+
+  .tema2 img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .tema5 img {
+    width: 80%;
+    margin-left: 35px;
+  }
+
+  .video {
+    width: 500px;
+    height: 315px;
   }
 }

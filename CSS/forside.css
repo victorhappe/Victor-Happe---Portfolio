@@ -205,7 +205,7 @@ h3 {
 .om-mig2 {
   background-color: #fdb414; /* light background */
   border: 2px solid #74450d;
-  padding: 20px; /* space inside the box */
+  padding: 15px; /* space inside the box */
   margin: 10px;
   height: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
@@ -216,6 +216,7 @@ h3 {
 
 .om-mig2 p {
   margin-top: 5px;
+  color: #74450d;
 }
 
 /********desktop********/
