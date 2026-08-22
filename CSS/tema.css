@@ -1,93 +1,76 @@
-/************Reset**************/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-Img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+/************ Project pages **************/
 
 .tema2 {
   display: grid;
-  justify-content: center;
   grid-template-columns: 1fr;
-  margin-top: 20px;
-  margin-bottom: 65px;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 40px auto 80px;
+  padding: 0 24px;
+  align-items: center;
 }
 
-.video {
-  width: 560px;
-  height: 315px;
+.th2 {
+  margin: 50px auto 20px;
+  text-align: center;
+  font-family: "Chicle", serif;
+  font-size: 50px;
+  color: #74450d;
 }
 
-.dot4 {
-  margin-left: 300px;
+.tema-2,
+.boks2 {
+  padding: 32px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #74450d;
+  background-color: #fdb414;
+  border: 2px solid #74450d;
+  border-radius: 18px;
+  text-align: left;
 }
 
 .tema2 h3 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .tema2 p {
-  margin-top: 5px;
-}
-
-.th2 {
-  margin-top: 20px;
-}
-
-.tema2 img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-.tema-2 {
-  padding: 10px 15px;
-  font-size: 17px;
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none;
-  color: #74450d;
-  background-color: #fdb414;
-  border: 2px solid #74450d;
-  border-radius: 15px;
-  margin: 30px;
-}
-
-.boks2 {
-  padding: 10px 20px;
-  font-size: 17px;
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none;
-  color: #74450d;
-  background-color: #fdb414;
-  border: 2px solid #74450d;
-  border-radius: 15px;
-  margin: 30px;
+  margin-top: 14px;
 }
 
 .tema2img {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
-  margin-left: 35px;
+  justify-content: center;
+
+  margin: 0;
+}
+
+.tema2img img {
+  width: 100%;
+  max-width: 520px;
+  margin: 0;
+  border-radius: 16px;
+}
+
+.tema5 img {
+  width: 100%;
+  max-width: 520px;
+  margin: 20px auto 0;
+  border-radius: 16px;
 }
 
 .video {
-  align-items: center;
-  justify-content: center;
-  margin-right: 30px;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 16px;
 }
+
+/************ Buttons **************/
 
 .btt2 {
   display: inline-block;
@@ -102,7 +85,6 @@ Img {
   border: none;
   border-radius: 15px;
   margin: 10px;
-  text-align: center;
   box-shadow: 0 9px #999;
 }
 
@@ -116,61 +98,24 @@ Img {
   margin-top: 40px;
 }
 
+/************ Desktop **************/
+
 @media (min-width: 840px) {
-  .tema-2 {
-    width: 450px;
-    font-size: 17px;
-    color: #74450d;
-    background-color: #fdb414;
-    border-radius: 15px;
-    margin: 20px auto; /* centers the box horizontally */
-    text-align: left; /* text stays at top/left */
-  }
-
-  .dot4 {
-    margin-left: 170px;
-  }
-
-  .dot3 {
-    margin-right: 200px;
-  }
-
-  .boks2 {
-    width: 450px;
-    font-size: 17px;
-    color: #74450d;
-    background-color: #fdb414;
-    border-radius: 15px;
-
-    margin: 20px auto; /* centers the box horizontally */
-    text-align: left; /* text stays at top/left */
-  }
-
   .tema2 {
-    display: grid;
-    justify-content: center;
     grid-template-columns: 1fr 1fr;
-    max-width: 900px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    gap: 70px 80px;
   }
 
-  .tema2 img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 20px;
+  .tema-2,
+  .boks2 {
+    min-height: 100%;
+  }
+
+  .tema2img img {
+    width: 100%;
   }
 
   .tema5 img {
-    width: 80%;
-    margin-left: 35px;
-  }
-
-  .video {
-    width: 500px;
-    height: 315px;
+    width: 100%;
   }
 }

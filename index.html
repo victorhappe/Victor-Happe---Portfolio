@@ -5,74 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victor Happe - Portfolio</title>
+
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/forside.css">
-    <link rel="stylesheet" href="tema.html">
 
     <link rel="icon" type="image/x-icon" href="images/favicon_io (4)/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
     <header class="site-header">
         <div class="logo">
             <a href="index.html">
-                <img src="images/logo2.svg" alt="logo">
+                <img src="images/logo2.svg" alt="Victor Happe logo">
             </a>
         </div>
+
         <nav class="nav-left">
             <ul class="menu">
-                <li><a href="#home">Forside</a></li>
-                <li><a href="#projekter">Mine projekter</a></li>
-                <li><a href="#erfaring">Erfaring</a></li>
-                <li><a href="#om-mig">Om mig</a></li>
-                <li><a href="#footer">Kontakt mig</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Creative Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
-            <button class="burger">
+
+            <button class="burger" aria-label="Open menu">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
             </button>
         </nav>
-
     </header>
 
     <main>
+
         <section id="home">
             <div class="leftdot">
                 <span class="dot1"></span>
                 <span class="dot2"></span>
                 <span class="dot3"></span>
-
             </div>
-            <h1>Victor Happe</h1>
-            <h3>Multimediedesigner</h3>
+
+            <div class="hero-content">
+                <h1>Victor Happe</h1>
+                <h3>Multimedia Design Student</h3>
+                <p>
+                    Aspiring video producer and visual storyteller based in Copenhagen.
+                    I create digital experiences, visual concepts and content with a focus on storytelling.
+                </p>
+                <a href="#projects" class="button">View my work</a>
+            </div>
+
             <div class="rightdot">
                 <span class="dot4"></span>
                 <span class="dot5"></span>
                 <span class="dot6"></span>
-
             </div>
         </section>
 
-        <section id="projekter">
-            <h2>Mine Projekter</h2>
+        <section id="projects">
+            <h2>Creative Work</h2>
+
+            <div class="project-intro">
+                <p>
+                    A selection of school projects and visual concepts where I have worked with
+                    branding, content production, web design, video editing and digital storytelling.
+                </p>
+            </div>
+
             <div class="button-wrapper">
-                <a href="tema2.html"><button class="button">Tema 2</button></a>
-                <a href="tema3.html"><button class="button">Tema 3</button></a>
-                <a href="tema4.html"><button class="button">Tema 4</button></a>
-                <a href="tema5.html"><button class="button">Tema 5</button></a>
+                <a href="dankort.html" class="button">Dankort Campaign</a>
+                <a href="host-mon.html" class="button">Høst Møn Festival</a>
+                <a href="easy-peacy.html" class="button">Easy Peacy</a>
+                <a href="portfolio.html" class="button">Personal Portfolio</a>
             </div>
         </section>
 
@@ -82,25 +95,17 @@
 
 
                 <div popover id="popover1">
-                    <h3>Adobe Illustrator – kompetenceniveau</h3>
+                    <h3>Adobe Illustrator</h3>
                     <p>
-                        Jeg har et grundlæggende til mellemniveau i Adobe Illustrator og kan anvende programmet som et
-                        aktivt værktøj i
-                        designprocessen. Jeg har erfaring med at arbejde med vektorgrafik og SVG-format, herunder
-                        udvikling af ikoner, figurer
-                        og UI-elementer til digitale brugergrænseflader.
-
-                        Jeg kan omsætte idéer fra skitser og papirprototyper til digitale illustrationer og anvende
-                        Illustrator i samspil med
-                        frontend-udvikling, hvor grafiske elementer efterfølgende implementeres i HTML, CSS og
-                        JavaScript. Derudover har jeg
-                        forståelse for struktur, lag, farver og typografi samt eksport af grafik til web med fokus på
-                        kvalitet og performance.</p>
-                    <button class="luk1" popovertarget="popover1">LUK</button>
+                        I use Adobe Illustrator to create vector graphics, icons, visual elements and
+                        simple illustrations for digital designs and web projects.
+                    </p>
+                    <button class="luk1" popovertarget="popover1">Close</button>
                 </div>
+
                 <div class="adobe">
                     <div>
-                        <button popovertarget="popover1" class="cta_btn" id="cta_open1">
+                        <button popovertarget="popover1" class="cta_btn">
                             <h3>Adobe Illustrator</h3>
                         </button>
                     </div>
@@ -112,25 +117,19 @@
                 </div>
 
                 <div popover id="popover2">
-                    <h3> Adobe Premiere Pro – kompetenceniveau</h3>
+                    <h3>Premiere Pro</h3>
                     <p>
-                        Jeg har et grundlæggende til middel niveau i Adobe Premiere Pro og kan redigere videoer med
-                        fokus på struktur, flow og
-                        fortælling. Jeg har erfaring med klipning, timing, simple overgange samt arbejde med lyd,
-                        herunder justering af niveauer
-                        og brug af musik og lydeffekter.
-
-                        Jeg kan sammensætte råt videomateriale til sammenhængende videoproduktioner og har forståelse
-                        for grundlæggende
-                        videoredigeringsteknikker som pacing, kliprytme og simple visuelle effekter. Derudover har jeg
-                        erfaring med eksport af
-                        video til forskellige platforme og formater.</p>
-                    <button class="luk1" popovertarget="popover2">LUK</button>
+                        I have experience editing short video productions with focus on structure,
+                        pacing, sound, flow and storytelling. I am currently developing these skills further
+                        through personal projects and my upcoming specialization in Advanced Media Production.
+                    </p>
+                    <button class="luk1" popovertarget="popover2">Close</button>
                 </div>
+
                 <div class="adobe">
                     <div>
-                        <button popovertarget="popover2" class="cta_btn" id="cta_open1">
-                            <h3>Premiere pro</h3>
+                        <button popovertarget="popover2" class="cta_btn">
+                            <h3>Premiere Pro</h3>
                         </button>
                     </div>
                     <span class="d1"></span>
@@ -141,23 +140,17 @@
                 </div>
 
                 <div popover id="popover3">
-                    <h3>Figma – kompetenceniveau</h3>
+                    <h3>Figma</h3>
                     <p>
-                        Jeg har et grundlæggende til middel niveau i Figma og kan anvende værktøjet i design- og
-                        idéudviklings-processer. Jeg har
-                        erfaring med at udarbejde wireframes, styletiles og moodboards samt udvikle digitale prototyper
-                        til webprojekter.
-
-                        Derudover har jeg brugt Figma som redskab til research, idéudvikling og præsentation af
-                        designløsninger, hvor fokus har
-                        været på struktur, visuel sammenhæng og brugeroplevelse. Jeg har forståelse for opbygning af
-                        layout, komponenter og
-                        simple interaktioner, som danner grundlag for videre udvikling i kode.</p>
-                    <button class="luk1" popovertarget="popover3">LUK</button>
+                        I use Figma for wireframes, moodboards, style tiles and digital prototypes.
+                        It helps me develop visual concepts and test design ideas before production.
+                    </p>
+                    <button class="luk1" popovertarget="popover3">Close</button>
                 </div>
+
                 <div class="adobe">
                     <div>
-                        <button popovertarget="popover3" class="cta_btn" id="cta_open1">
+                        <button popovertarget="popover3" class="cta_btn">
                             <h3>Figma</h3>
                         </button>
                     </div>
@@ -169,24 +162,17 @@
                 </div>
 
                 <div popover id="popover4">
-                    <h3>HTML – kompetenceniveau</h3>
+                    <h3>HTML</h3>
                     <p>
-                        Jeg har et grundlæggende til middel niveau i HTML og kan opbygge strukturen for en hjemmeside
-                        med fokus på
-                        overskuelighed og semantisk opbygning. Jeg har erfaring med at arbejde med grid-containere,
-                        div’er og sectioner samt
-                        opsætning af header, navigation og menuer, herunder burger-menuer til mobilvisning.
-
-                        Derudover har jeg en grundlæggende forståelse for responsivt webdesign og kan arbejde med media
-                        queries i samspil med
-                        CSS. Jeg har også kendskab til box-modellen og hvordan margin, padding og border påvirker layout
-                        og struktur på en
-                        hjemmeside.</p>
-                    <button class="luk1" popovertarget="popover4">LUK</button>
+                        I use HTML to structure websites with clear sections, navigation,
+                        content hierarchy and semantic elements.
+                    </p>
+                    <button class="luk1" popovertarget="popover4">Close</button>
                 </div>
+
                 <div class="adobe">
                     <div>
-                        <button popovertarget="popover4" class="cta_btn" id="cta_open1">
+                        <button popovertarget="popover4" class="cta_btn">
                             <h3>HTML</h3>
                         </button>
                     </div>
@@ -198,30 +184,17 @@
                 </div>
 
                 <div popover id="popover5">
-                    <h3>CSS – kompetenceniveau</h3>
+                    <h3>CSS</h3>
                     <p>
-                        Jeg kan bruge CSS til at style og opbygge layoutet på en hjemmeside med fokus på struktur,
-                        visuel sammenhæng og
-                        responsivt design. Jeg arbejder med reset og box-modellen og har forståelse for, hvordan margin,
-                        padding og border
-                        påvirker layoutet.
-
-                        Jeg kan opsætte layout ved hjælp af grid og flexbox og tilpasse designet til både mobil og
-                        desktop gennem media queries.
-                        Jeg har erfaring med at udvikle navigationer, herunder burger-menuer, samt vise og skjule
-                        indhold afhængigt af
-                        skærmstørrelse.
-
-                        Derudover arbejder jeg med visuelle og interaktive detaljer som hover-effekter, transitions og
-                        simple animationer. Jeg
-                        har også erfaring med custom properties (CSS-variabler), dark mode-løsninger samt styling af
-                        pop-up- og
-                        popover-elementer med fokus på brugervenlighed og æstetik.</p>
-                    <button class="luk1" popovertarget="popover5">LUK</button>
+                        I use CSS to create responsive layouts, visual styling, hover effects,
+                        transitions and simple animations for web projects.
+                    </p>
+                    <button class="luk1" popovertarget="popover5">Close</button>
                 </div>
+
                 <div class="adobe">
                     <div>
-                        <button popovertarget="popover5" class="cta_btn" id="cta_open1">
+                        <button popovertarget="popover5" class="cta_btn">
                             <h3>CSS</h3>
                         </button>
                     </div>
@@ -233,25 +206,17 @@
                 </div>
 
                 <div popover id="popover6">
-                    <h3>JavaScript – kompetenceniveau</h3>
+                    <h3>JavaScript</h3>
                     <p>
-                        Jeg har et begynderniveau i JavaScript og kan anvende sproget til at skabe simple interaktioner
-                        og funktionalitet på en
-                        hjemmeside. Jeg har erfaring med at arbejde med DOM-manipulation og events, herunder brug af
-                        querySelector,
-                        addEventListener og classList.toggle.
-
-                        Jeg kan opsætte klikfunktioner, der styrer visning af elementer som popovers/modaler og
-                        navigation, eksempelvis ved at
-                        åbne og lukke dialoger eller aktivere en burger-menu på mobil. Jeg har en grundlæggende
-                        forståelse for funktioner,
-                        variabler og hvordan JavaScript samarbejder med HTML og CSS for at skabe interaktive
-                        brugergrænseflader.</p>
-                    <button class="luk1" popovertarget="popover6">LUK</button>
+                        I use JavaScript for simple interactions such as menus, popovers,
+                        event listeners and dynamic content on websites.
+                    </p>
+                    <button class="luk1" popovertarget="popover6">Close</button>
                 </div>
+
                 <div class="adobe">
                     <div>
-                        <button popovertarget="popover6" class="cta_btn" id="cta_open1">
+                        <button popovertarget="popover6" class="cta_btn">
                             <h3>JavaScript</h3>
                         </button>
                     </div>
@@ -263,45 +228,39 @@
                 </div>
 
             </div>
-
         </section>
 
-        <section id="om-mig">
-            <h2 class="omh2">Om mig</h2>
+        <section id="about">
+            <h2 class="omh2">About me</h2>
+
             <div class="om-mig1">
                 <div>
-                    <img src="images/IMG_0654.webp" alt="selfie">
+                    <img src="images/IMG_0654.webp" alt="Portrait of Victor Happe">
                 </div>
+
                 <div class="om-mig2">
                     <p>
-                        Hej jeg hedder Victor Happe, og studere multimediedesign på Erhvervsakademi København. Min
-                        uddannelse fokuserer på
-                        digitalt design, brugergrænse-flader og frontend-udvikling, hvor jeg arbejder med at kombinere
-                        visuel form,
-                        funktionalitet og brugeroplevelse i digitale løsninger.
+                        Hi, I'm Victor Happe, a Multimedia Design student at KEA – Copenhagen School of Design
+                        and Technology. I am especially interested in video production, visual storytelling
+                        and digital content creation.
                     </p>
+
                     <p>
-                        Gennem min uddannelse har jeg opnået erfaring med værktøjer som Figma, Adobe Illustrator, HTML,
-                        CSS og JavaScript samt
-                        med indholdsproduktion i form af foto og videoredigering i Premiere Pro. Jeg har arbejdet med
-                        hele processen bag et
-                        digitalt produkt – fra idéudvikling og research til prototyper, kodning og færdig
-                        implementering.
+                        Through my studies, I have worked with branding, UX, web design, frontend development,
+                        content production and video editing. I enjoy combining visuals, storytelling and
+                        digital experiences to communicate ideas in a clear and engaging way.
                     </p>
+
                     <p>
-                        Ved siden af studiet har jeg mange års erhvervserfaring fra servicebranchen, hvor jeg har
-                        udviklet stærke samarbejds- og
-                        kommunikationsevner. Denne erfaring tager jeg med mig ind i mit arbejde som multimediedesigner,
-                        hvor forståelse for
-                        brugere, kunder og samarbejdspartnere er en vigtig del af processen.
+                        This autumn, I will specialize in Advanced Media Production, where I will further develop
+                        my skills in video production, post-production, animation, immersive media and transmedia
+                        storytelling.
                     </p>
+
                     <p>
-                        På mit 1. semester har jeg fået en solid grundforståelse for multimediedesignfaget. Jeg er
-                        blevet klogere på, hvordan
-                        design, indhold og kode hænger sammen, og hvordan man arbejder struktureret og brugercentreret
-                        med digitale løsninger.
-                        Semesteret har givet mig et stærkt fagligt fundament, som jeg bygger videre på i de kommende
-                        semestre.
+                        Alongside my studies, I have several years of experience from the service industry,
+                        where I have developed strong communication skills, responsibility and the ability to
+                        work well in busy team environments.
                     </p>
                 </div>
             </div>
@@ -310,9 +269,11 @@
     </main>
 
     <footer id="footer">
-        <h2>Kontakt mig</h2>
+        <h2>Contact</h2>
+
         <div class="kontakt">
             <div class="kontakt2">
+
                 <div class="contact-item">
                     <svg width="20" height="20" fill="#fcbc32" viewBox="0 0 24 24">
                         <path
@@ -320,21 +281,23 @@
                     </svg>
                     <span>+45 42 68 24 32</span>
                 </div>
+
                 <div class="contact-item">
                     <svg width="20" height="20" fill="#fcbc32" viewBox="0 0 24 24">
                         <path
                             d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 6 8-6v10H4z" />
                     </svg>
-                    <span>victorhappe@gmai.com</span>
+                    <span>victorhappe@gmail.com</span>
                 </div>
+
                 <div class="social-links">
                     <div>
                         <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
                             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
                                 alt="Instagram logo"> victor_happe
                         </a>
-
                     </div>
+
                     <div>
                         <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
                             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
@@ -342,14 +305,18 @@
                         </a>
                     </div>
                 </div>
+
             </div>
+
             <div class="logo2">
-                <img src="images/logo2.svg" alt="logo">
+                <img src="images/logo2.svg" alt="Victor Happe logo">
             </div>
         </div>
     </footer>
+
     <script src="menu.js"></script>
     <script src="java.js"></script>
+
 </body>
 
 </html>

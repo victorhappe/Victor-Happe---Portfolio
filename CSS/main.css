@@ -1,4 +1,4 @@
-/************Reset**************/
+/************ Reset **************/
 
 * {
   margin: 0;
@@ -6,17 +6,22 @@
   box-sizing: border-box;
 }
 
-/*****Farver***/
-body {
-  background-color: #f8efe4;
+img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/******scroll********/
 html {
   scroll-behavior: smooth;
 }
 
-/*********fonte********/
+body {
+  background-color: #f8efe4;
+}
+
+/************ Fonts **************/
+
 .rampart-one-regular {
   font-family: "Rampart One", sans-serif;
   font-weight: 400;
@@ -34,39 +39,56 @@ html {
   font-weight: 400;
   font-style: normal;
 }
-/********header*********/
 
-.logo img {
-  height: 130px; /* or width: 200px */
-  width: auto; /* keeps proportions */
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
+/************ Header **************/
 
 header {
   position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   padding: 15px;
   background-color: #f8efe4;
-  border-bottom: #74450d solid 2px;
+  border-bottom: 2px solid #74450d;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
 }
+
+.logo img {
+  height: 110px;
+  width: auto;
+}
+
+/************ Sections **************/
 
 section {
   min-height: 40vh;
   padding: 60px 20px;
 }
 
-/***********burger menu**************/
+/************ Navigation **************/
+
+.menu {
+  list-style: none;
+}
+
+.menu a {
+  color: #74450d;
+  text-decoration: none;
+}
+
+/************ Burger menu **************/
 
 .burger {
+  display: none;
   width: 30px;
   height: 50px;
   cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
 .burger .line {
@@ -77,132 +99,87 @@ section {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
-.burger {
-  display: none;
-}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
   }
+
   .burger {
     display: block;
-    background-color: transparent;
-    border: 0;
+    position: absolute;
+    right: 20px;
+    top: 45px;
   }
 
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
   }
 
   .burger.active .line:nth-child(2) {
     opacity: 0;
-    transition: 0.15s linear;
   }
 
   .burger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
   }
 
   nav.active .menu {
-    font-family: "Anton SC", sans-serif;
     display: block;
-    text-align: center;
-    background-color: #fdb414;
     position: absolute;
-    top: 94px;
+    top: 142px;
     left: 0;
     width: 100%;
     padding: 20px;
+    background-color: #fdb414;
+    text-align: center;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+  }
+
+  nav.active .menu li {
+    list-style: none;
+    margin: 15px 0;
   }
 
   nav.active .menu a {
+    font-family: "Anton SC", sans-serif;
     font-size: 24px;
     color: #74450d;
-    text-align: center;
+  }
+
+  nav.active .menu a:hover {
+    color: #f8efe4;
+    transform: scale(1.05);
   }
 }
 
-nav.active .menu li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.menu li:hover {
-  transform: scale(1.05); /* Gør billedet lidt større */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Skyggeeffekt */
-}
-
-@media (max-width: 800px) {
-  .menu {
-    display: none;
-  }
-}
-.overskrift {
-  margin-block: 0.8rem;
-  font-size: 0.6rem;
-}
-
-.kontakt2 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-@media screen and (max-width: 800px) {
-  .burger {
-    position: absolute;
-    right: 20px; /* 👈 distance from right side */
-    top: 20px; /* 👈 adjust as needed */
-  }
-}
-
-/********menu***********/
+/************ Desktop menu **************/
 
 @media (min-width: 840px) {
   header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background-color: #f8efe4;
-    border-bottom: #74450d 2px solid;
-    box-shadow: none;
-
-    /* key part */
-    position: sticky;
-    display: flex;
-    align-items: center;
+    justify-content: flex-start;
     padding: 18px 30px;
+    box-shadow: none;
   }
 
-  /* Make nav take full width so it can push left/right */
   nav {
     flex: 1;
     display: flex;
     align-items: center;
   }
 
-  /* Menu is a flex row and stretches full width */
   .menu {
     flex: 1;
     display: flex;
     align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 25px;
     gap: 18px;
+    padding: 25px;
   }
 
-  /* Push the LAST menu item (Kontakt mig) to the far right */
   .menu li:last-child {
     margin-left: auto;
   }
 
-  /* Center the logo in the header (true center) */
   .logo {
     position: absolute;
     left: 50%;
@@ -210,74 +187,46 @@ nav.active .menu li {
   }
 
   .logo img {
-    width: auto;
     height: 100px;
-    display: block;
+    width: auto;
   }
 
   .menu a {
     display: block;
-    padding: 10px 10px;
+    padding: 10px;
     color: #74450d;
     text-decoration: none;
-    transition: color 0.3s;
     font-family: "Chicle", serif;
-    font-weight: 400;
     font-size: 1.7rem;
-    -webkit-text-stroke: 0.5px black;
+    transition: color 0.3s;
   }
 
   .menu a:hover {
     color: #fdb414;
   }
 
-  /* Style the last link like a button (Kontakt mig) */
   .menu li:last-child a {
-    background: #ffc760;
+    background-color: #ffc760;
     color: #74450d;
     border-radius: 999px;
     padding: 12px 18px;
-    -webkit-text-stroke: 0;
   }
 
   .menu li:last-child a:hover {
-    color: #fdb414;
-    -webkit-text-stroke: 0.5px black;
+    color: #74450d;
     filter: brightness(0.95);
   }
 
-  /* Optional: hide burger on desktop */
   .burger {
     display: none;
   }
-
-  /*****footer********/
-  .kontakt2 {
-    width: 80%;
-    font-size: larger;
-  }
-
-  .kontakt {
-    grid-template-columns: 1fr;
-    margin: 10px;
-    margin-left: 300px;
-  }
-
-  .logo2 img {
-    width: auto;
-    height: 100px;
-    display: block;
-    margin-right: 350px;
-  }
 }
 
-/*********** footer ***********/
+/************ Footer **************/
 
 #footer {
   background-color: #f8efe4;
-  border-top: #74450d 2px solid;
-  left: 0;
-  bottom: 0;
+  border-top: 2px solid #74450d;
   width: 100%;
   color: #74450d;
   text-align: center;
@@ -287,23 +236,25 @@ nav.active .menu li {
 
 .kontakt {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 15px;
   align-items: center;
-}
-
-.logo2 {
-  align-items: center;
+  gap: 20px;
 }
 
 .kontakt2 {
+  display: grid;
+  grid-template-columns: 1fr;
   border-radius: 15px;
-  background-color: #fdb414; /* light background */
+  background-color: #fdb414;
   border: 2px solid #74450d;
-  padding: 20px; /* space inside the box */
+  padding: 20px;
   margin: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
-  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  margin-top: 8px;
 }
 
 .contact-item svg {
@@ -315,38 +266,71 @@ nav.active .menu li {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 5px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #74450d;
+  text-decoration: none;
 }
 
 .social-links img {
   width: 24px;
-  color: #74450d;
-  /* Dette gør ikonerne gule */
   transition: transform 0.2s ease;
-  fill: #74450d;
 }
 
 .social-links img:hover {
   transform: scale(1.2);
 }
 
-/******popover******/
-[popover] {
-  padding: 1rem;
-  max-height: 90vh;
-  max-width: 50ch;
-  width: 90vw;
-  align-items: center;
+.logo2 img {
+  width: auto;
+  height: 100px;
+  margin: 0 auto;
 }
 
+/************ Desktop footer **************/
+
+@media (min-width: 840px) {
+  .kontakt {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin: 20px auto 0;
+  }
+
+  .kontakt2 {
+    font-size: larger;
+  }
+
+  .logo2 img {
+    height: 100px;
+  }
+}
+
+/************ Popovers **************/
+
 [popover] {
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
+
+  width: min(90vw, 720px);
+  max-height: 80vh;
+  overflow: auto;
+
+  padding: 1rem;
+  border: 0;
+  border-radius: 12px;
+  background-color: #fdb414;
+  color: #74450d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
   opacity: 0;
   rotate: -360deg;
   transition: 0.5s allow-discrete;
 }
 
 :popover-open {
-  opacity: 3;
+  opacity: 1;
   rotate: none;
 
   @starting-style {
@@ -355,32 +339,17 @@ nav.active .menu li {
   }
 }
 
-/* Gør popovers pæne og scrollbare */
-[popover] {
-  inset: 50% auto auto 50%;
-  transform: translate(-50%, -50%);
-  width: min(90vw, 720px);
-  max-height: 80vh; /* << vigtig */
-  overflow: auto; /* << vigtig */
-  padding: 1rem;
-  border: 0;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  background: #fdb414;
-  color: #74450d;
-}
-
-/* Billeder skal ikke sprænge layoutet */
 [popover] img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* Valgfrit: lås sidescroll når popover er åben (som dialog) */
 :root:has([popover]:popover-open) {
   overflow: hidden;
 }
+
+/************ Skill buttons **************/
 
 .cta_btn {
   display: inline-block;
@@ -395,8 +364,7 @@ nav.active .menu li {
   background-color: #fdb414;
   border: none;
   border-radius: 15px;
-  margin: 10px;
-  text-align: center;
+  margin: 40px 10px 10px;
   box-shadow: 0 9px #999;
 }
 
@@ -405,20 +373,14 @@ nav.active .menu li {
   transform: translateY(4px);
 }
 
-.cta_btn {
-  align-items: center;
-  text-align: center;
-  margin-top: 40px;
-  align-content: center;
-}
-
 .luk1 {
   color: #74450d;
   font-family: "Anton SC", sans-serif;
   font-size: 15px;
   background-color: #ffc760;
-  padding: 5px;
-  margin-top: 4px;
+  padding: 5px 12px;
+  margin-top: 15px;
   border-radius: 15px;
-  border-color: #74450d;
+  border: 2px solid #74450d;
+  cursor: pointer;
 }

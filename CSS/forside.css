@@ -1,4 +1,4 @@
-/************Reset**************/
+/************ Reset **************/
 
 * {
   margin: 0;
@@ -6,11 +6,17 @@
   box-sizing: border-box;
 }
 
-Img {
+img {
   width: 100%;
   height: auto;
   display: block;
 }
+
+body {
+  background-color: #f8efe4;
+}
+
+/************ Typography **************/
 
 h1 {
   font-family: "Rampart One", sans-serif;
@@ -24,84 +30,84 @@ h2 {
   font-size: 35px;
   color: #74450d;
   text-align: center;
+  padding-top: 30px;
 }
 
-.dot1 {
-  height: 60px;
-  width: 60px;
-  margin: 10px;
-  margin-top: 20px;
-  background-color: #fdb414;
-  border-radius: 50%;
-  display: inline-block;
+h3 {
+  margin-left: 5px;
+  font-family: "Anton SC", sans-serif;
+  color: #74450d;
+  text-align: center;
 }
 
-.dot2 {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  margin-top: 20px;
-  background-color: #ffc760;
-  border-radius: 50%;
-  display: inline-block;
+p {
+  color: #74450d;
+  line-height: 1.5;
 }
 
-.dot3 {
-  height: 40px;
-  width: 40px;
-  margin: 10px;
-  margin-top: 20px;
-  background-color: #ff9737;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot6 {
-  height: 60px;
-  width: 60px;
-  margin: 10px;
-  background-color: #fdb414;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot5 {
-  height: 50px;
-  width: 50px;
-  margin: 10px;
-  background-color: #ffc760;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot4 {
-  height: 40px;
-  width: 40px;
-  margin: 10px;
-  background-color: #ff9737;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.leftdot {
-  margin-left: 300px;
-}
-.rightdot {
-  margin-left: 40px;
-  margin-top: 5px;
-  margin-top: 1px;
-}
+/************ Hero **************/
 
 #home {
   scroll-margin-top: 120px;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-/********Knapper********/
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-#projekter {
+.hero-content h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.hero-content p {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/************ Dots **************/
+
+.dot1,
+.dot2,
+.dot3,
+.dot4,
+.dot5,
+.dot6 {
+  margin: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot1,
+.dot6 {
+  height: 60px;
+  width: 60px;
+  background-color: #fdb414;
+}
+
+.dot2,
+.dot5 {
+  height: 50px;
+  width: 50px;
   background-color: #ffc760;
-  border-top: #74450d 2px solid;
 }
+
+.dot3,
+.dot4 {
+  height: 40px;
+  width: 40px;
+  background-color: #ff9737;
+}
+
+.leftdot,
+.rightdot {
+  text-align: center;
+}
+
+/************ Buttons **************/
 
 .button {
   display: inline-block;
@@ -116,7 +122,6 @@ h2 {
   border: none;
   border-radius: 15px;
   margin: 10px;
-  text-align: center;
   box-shadow: 0 9px #999;
 }
 
@@ -130,165 +135,171 @@ h2 {
   margin-top: 40px;
 }
 
-/*******erfaring******/
+/************ Projects **************/
 
-#erfaring {
+#projects {
+  background-color: #ffc760;
+  border-top: 2px solid #74450d;
+  padding: 30px 20px 60px;
+}
+
+.project-intro {
+  max-width: 650px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+/************ Skills **************/
+
+#skills {
   background-color: #f8efe4;
-  border-top: #74450d 2px solid;
-  display: grid;
+  border-top: 2px solid #74450d;
+  padding: 30px 20px 60px;
 }
 
 .rating {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.dot {
-  height: 30px;
-  width: 30px;
-  margin: 2px;
-  margin-top: 5px;
-  background-color: gray;
-  border-radius: 50%;
-  display: inline-block;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  max-width: 900px;
+  margin: 30px auto 0;
 }
 
 .adobe {
-  margin-left: 50px;
-  margin-top: 50px;
+  text-align: center;
 }
 
+.cta_btn {
+  border: none;
+  cursor: pointer;
+}
+
+.dot,
 .d1 {
   height: 30px;
   width: 30px;
   margin: 2px;
   margin-top: 5px;
-  background-color: #fdb414;
   border-radius: 50%;
   display: inline-block;
 }
 
-h3 {
-  margin-left: 5px;
-  font-family: "Anton SC", sans-serif;
-  color: #74450d;
-  text-align: center;
+.dot {
+  background-color: gray;
 }
 
-/*******om-mig*********/
+.d1 {
+  background-color: #fdb414;
+}
 
-#om-mig {
+/************ Popovers **************/
+
+[popover] {
+  max-width: 500px;
+  padding: 25px;
+  border: 2px solid #74450d;
+  border-radius: 15px;
   background-color: #ffc760;
-  border-top: #74450d 2px solid;
-  display: grid;
+  color: #74450d;
+  margin: auto;
+}
+
+[popover] h3 {
+  margin-bottom: 15px;
+}
+
+.luk1 {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 16px;
+  font-family: "Anton SC", sans-serif;
+  background-color: #fdb414;
+  color: #74450d;
+  border: 2px solid #74450d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/************ About **************/
+
+#about {
+  background-color: #ffc760;
+  border-top: 2px solid #74450d;
+  padding: 30px 20px 60px;
 }
 
 .om-mig1 {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 5px;
+  gap: 25px;
+  margin-top: 20px;
 }
 
 .om-mig1 img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  margin-top: 10px;
+  width: 70%;
   border: 2px solid #74450d;
   border-radius: 15px;
-  width: 70%;
-  align-items: center;
-  justify-content: center;
 }
 
 .om-mig2 {
-  background-color: #fdb414; /* light background */
+  background-color: #fdb414;
   border: 2px solid #74450d;
-  padding: 15px; /* space inside the box */
+  padding: 20px;
   margin: 10px;
-  height: 400px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
 .om-mig2 p {
-  margin-top: 5px;
-  color: #74450d;
+  margin-top: 12px;
 }
 
-/********desktop********/
+/************ Desktop **************/
 
 @media (min-width: 840px) {
   h1 {
-    font-size: 60px;
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  #home {
+    padding: 90px 20px;
   }
 
   .leftdot {
-    margin-left: 800px;
+    text-align: right;
+    max-width: 900px;
+    margin: 0 auto;
   }
+
   .rightdot {
-    margin-left: 370px;
-    margin-top: 10px;
-  }
-
-  /******projekter*******/
-
-  /*******erfaring*******/
-
-  .adobe {
-    margin-left: 50px;
-    margin-top: 50px;
-  }
-
-  #erfaring {
-    align-items: center;
-    justify-content: center;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   .rating {
-    margin-right: 35px;
-    font-size: 20px;
-  }
-
-  .adobe {
-    margin-left: 50px;
-    margin-top: 50px;
-    padding: 15px;
-  }
-
-  /*********Om-mig*********/
-
-  .om-mig1 img {
-    width: 60%;
-    margin-left: 260px;
-    margin-top: 20px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .om-mig1 {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 5px;
-    margin-top: 2px;
-    justify-content: center;
+    max-width: 1000px;
+    margin: 30px auto 0;
+    align-items: center;
+  }
+
+  .om-mig1 img {
+    width: 60%;
   }
 
   .om-mig2 {
-    background-color: #fdb414; /* light background */
-    border: 2px solid #74450d;
-    padding: 10px; /* space inside the box */
-    width: 400px;
-    height: 570px;
-    margin-top: 20px;
-    margin-left: 25px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
-    align-items: center;
-    justify-content: center;
-  }
-
-  .om-mig2 p {
-    margin-top: 5px;
+    max-width: 450px;
+    margin: 0;
   }
 }
